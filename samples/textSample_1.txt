@@ -1,0 +1,4 @@
+React is a JavaScript library for building UI components.
+It is developed and maintained by Meta and open source contributors.
+React enables developers to build large-scale applications that can update without full reload.
+Its primary aim is to be fast, modular, and easy to use.

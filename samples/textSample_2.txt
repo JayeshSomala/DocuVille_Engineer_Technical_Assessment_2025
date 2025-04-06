@@ -1,0 +1,4 @@
+React is a JavaScript library for building user interfaces.
+It is maintained by Facebook and a community of developers.
+React allows developers to create large web applications that can update data without reloading the page.
+Its main goal is to be fast, scalable, and simple.

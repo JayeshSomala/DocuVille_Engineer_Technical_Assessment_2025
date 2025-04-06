@@ -31,11 +31,22 @@ This is a solution to the **Software Engineer Technical Assessment [2025]** for 
 
 ## 🧩 System Design (High-Level)
 
-[User Uploads Documents] ↓ [Frontend React App] ↓ [Backend API - Python Flask] ↓ [Preprocessing: Tokenizing, Lowercasing, Removing Punctuation] ↓ [TF-IDF Vectorization] ↓ [Cosine Similarity Calculation] ↓ [Frontend Displays Score and Differences]
+[User Uploads Two Text Files]
+           ↓
+    [React Frontend App]
+           ↓
+ [Node.js + Express Backend API]
+           ↓
+ [Preprocessing: Tokenization using Natural]
+           ↓
+ [Jaccard Similarity Calculation]
+           ↓
+ [Word-Level Differences via diff Library]
+           ↓
+ [Frontend Displays Similarity Score + Diff Highlights]
 
-yaml
-Copy
-Edit
+✅ Tokenization retains stopwords for better scoring.
+✅ Differences are calculated at the word level using diffWords.
 
 ---
 
@@ -47,9 +58,9 @@ Edit
 - Axios
 
 ### Backend
-- Python + Flask
-- Scikit-learn for TF-IDF & cosine similarity
-- diff-lib for text differences
+- Node.js (Express)
+- natural for tokenization and NLP tasks
+- diff for textual difference detection
 
 ---
 
@@ -57,14 +68,13 @@ Edit
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/PranjalShinde16/doc-similarity-checker.git
-cd doc-similarity-checker
+git clone https://github.com/JayeshSomala/DocuVille_Engineer_Technical_Assessment_2025.git
+cd DocuVille_Engineer_Technical_Assessment_2025
 ```
 ### 2. Start the Backend
 ```bash
 cd doc-similarity-backend
-pip install -r requirements.txt
-python app.py
+node index.js
 ```
 ### 3. Start the Frontend
 ```bash
