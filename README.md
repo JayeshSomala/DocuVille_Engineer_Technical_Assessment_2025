@@ -82,7 +82,7 @@ cd doc-similarity-frontend
 npm install
 npm start
 ```
-Backend should run at http://localhost:5000, and frontend at http://localhost:3000.
+Backend should run at http://localhost:5000/compare, and frontend at http://localhost:3000.
 
 
 🧪 Sample Input Files
