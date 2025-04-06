@@ -59,48 +59,28 @@ Edit
 ```bash
 git clone https://github.com/PranjalShinde16/doc-similarity-checker.git
 cd doc-similarity-checker
-2. Start the Backend
-bash
-Copy
-Edit
+```
+### 2. Start the Backend
+```bash
 cd doc-similarity-backend
 pip install -r requirements.txt
 python app.py
-3. Start the Frontend
-bash
-Copy
-Edit
+```
+### 3. Start the Frontend
+```bash
 cd doc-similarity-frontend
 npm install
 npm start
+```
 Backend should run at http://localhost:5000, and frontend at http://localhost:3000.
 
-🔗 Deployed Demo (Optional)
-👉 Link to deployed app (if available)
 
 🧪 Sample Input Files
 You can find sample .txt files in the /samples folder for quick testing:
 
-legal_doc_1.txt
+textSample_1.txt
 
-legal_doc_2.txt
-
-research_summary_a.txt
-
-research_summary_b.txt
-
-📩 Submission Instructions
-Once completed, submit the following:
-
-✅ GitHub Repo Link: https://github.com/PranjalShinde16/doc-similarity-checker
-
-✅ Demo Link / Screenshots
-
-✅ Email to: recruitment@docuville.ai
-
-✅ Subject Line: Pranjal Shinde - Software Engineer - Tech Assessment
-
-✅ Include your LinkedIn Profile
+textSample_2.txt
 
 🧠 Reflections & Future Improvements
 Experience:
@@ -118,5 +98,3 @@ Authentication for user-level document history
 
 Deploying on Vercel + Render or GCP with persistent logging
 
-🧾 License
-This project is open-sourced for assessment purposes only.
