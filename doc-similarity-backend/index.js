@@ -10,14 +10,13 @@ const PORT = 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-// Tokenize but do NOT remove stopwords
+
 function tokenizeAndClean(text) {
   const tokenizer = new natural.WordTokenizer();
   const tokens = tokenizer.tokenize(text.toLowerCase());
-  return tokens; // Keeping stopwords for better similarity scoring
+  return tokens;
 }
 
-// Jaccard Similarity Function
 function jaccardSimilarity(tokensA, tokensB) {
   const setA = new Set(tokensA);
   const setB = new Set(tokensB);
@@ -36,14 +35,12 @@ app.post("/compare", (req, res) => {
     return res.status(400).json({ error: "Both text1 and text2 are required." });
   }
 
-  // Tokenize
   const tokens1 = tokenizeAndClean(text1);
   const tokens2 = tokenizeAndClean(text2);
 
-  // Similarity score
   const score = jaccardSimilarity(tokens1, tokens2);
 
-  // Word-level diff
+
   const diff = Diff.diffWords(text1, text2);
 
   res.json({
